@@ -5,29 +5,9 @@ layout: page
 <input id="photo" type="file">
 <div id="results"></div>
 
-<script type="module">
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/4.12.0/gradio.js"
+></script>
 
-	import { client } from "https://cdn.jsdelivr.net/npm/@gradio/client@0.1.4/dist/index.min.js";
-
-    async function loaded(reader) {   
-		const app = await client("https://niloycste68-vehicles-recognizer.hf.space/--replicas/rchto/");
-		
-		const result = await app.predict("/predict", [
-						reader.result, 	// blob in 'image_path' Image component
-			]);
-
-		var label = result.data[0]['label']
-
-		results.innerHTML = `<br/> <img src = "${reader.result}" width="500"> <p>${label}</p>`;
-    }
-
-
-    function read() {
-        const reader = new FileReader();
-        reader.addEventListener('load', () => loaded(reader))
-        reader.readAsDataURL(photo.files[0]);
-    }
-
-    photo.addEventListener('input', read);
-
-</script>
+<gradio-app src="https://niloycste68-vehicles-recognizer.hf.space"></gradio-app>
