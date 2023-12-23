@@ -8,26 +8,69 @@ layout: page
 Welcome to the Vehicle Image Recognizer, a powerful system capable of classifying various vehicles. Below is a list of vehicles it can identify:
 
 <div class="vehicle-names">
-  <p class="vehicle-name">car</p>
-  <p class="vehicle-name">motorcycle</p>
-  <p class="vehicle-name">bicycle</p>
-  <p class="vehicle-name">truck</p>
-  <p class="vehicle-name">bus</p>
-  <p class="vehicle-name">van</p>
-  <p class="vehicle-name">rickshaw</p>
-  <p class="vehicle-name">scooter</p>
-  <p class="vehicle-name">skateboard</p>
-  <p class="vehicle-name">ambulance</p>
-  <p class="vehicle-name">fire truck</p>
-  <p class="vehicle-name">tractor</p>
-  <p class="vehicle-name">segway</p>
-  <p class="vehicle-name">unicycle</p>
-  <p class="vehicle-name">jet ski</p>
-  <p class="vehicle-name">helicopter</p>
-  <p class="vehicle-name">airplane</p>
-  <p class="vehicle-name">boat</p>
-  <p class="vehicle-name">kayak</p>
-  <p class="vehicle-name">hovercraft</p>
+  <p class="vehicle-name" data-name="car">car</p>
+  <p class="vehicle-name" data-name="motorcycle">motorcycle</p>
+  <p class="vehicle-name" data-name="bicycle">bicycle</p>
+  <p class="vehicle-name" data-name="truck">truck</p>
+  <p class="vehicle-name" data-name="bus">bus</p>
+  <p class="vehicle-name" data-name="van">van</p>
+  <p class="vehicle-name" data-name="rickshaw">rickshaw</p>
+  <p class="vehicle-name" data-name="scooter">scooter</p>
+  <p class="vehicle-name" data-name="skateboard">skateboard</p>
+  <p class="vehicle-name" data-name="ambulance">ambulance</p>
+  <p class="vehicle-name" data-name="fire truck">fire truck</p>
+  <p class="vehicle-name" data-name="tractor">tractor</p>
+  <p class="vehicle-name" data-name="segway">segway</p>
+  <p class="vehicle-name" data-name="unicycle">unicycle</p>
+  <p class="vehicle-name" data-name="jet ski">jet ski</p>
+  <p class="vehicle-name" data-name="helicopter">helicopter</p>
+  <p class="vehicle-name" data-name="airplane">airplane</p>
+  <p class="vehicle-name" data-name="boat">boat</p>
+  <p class="vehicle-name" data-name="kayak">kayak</p>
+  <p class="vehicle-name" data-name="hovercraft">hovercraft</p>
 </div>
 
-Feel free to test the recognition capabilities of our system by uploading images of these vehicles.
+<div id="vehicle-content" class="content">
+  <!-- Content for the selected vehicle will appear here -->
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var vehicleNames = document.querySelectorAll(".vehicle-name");
+    var contentDiv = document.getElementById("vehicle-content");
+
+    vehicleNames.forEach(function (name) {
+      name.addEventListener("click", function () {
+        var vehicleName = this.getAttribute("data-name");
+        contentDiv.innerHTML = getContentBasedOnName(vehicleName);
+        updateBackgroundColorBasedOnName(vehicleName);
+      });
+    });
+
+    function getContentBasedOnName(name) {
+      // Define content based on the vehicle name
+      switch (name) {
+        case "car":
+          return "Cars are widely used for personal transportation.";
+        case "motorcycle":
+          return "Motorcycles are popular for their agility and speed.";
+        // Add cases for other vehicles as needed
+        default:
+          return "Information not available for " + name + ".";
+      }
+    }
+
+    function updateBackgroundColorBasedOnName(name) {
+      // Define background color based on the vehicle name
+      var colors = {
+        car: "#FFD700", // Gold
+        motorcycle: "#FF4500", // OrangeRed
+        // Add colors for other vehicles as needed
+      };
+
+      contentDiv.style.backgroundColor = colors[name] || "#FFFFFF"; // Default to white if color not defined
+    }
+  });
+</script>
+
+Feel free to test the recognition capabilities of our system by clicking on the vehicle names.
