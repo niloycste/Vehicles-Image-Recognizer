@@ -25,7 +25,20 @@ examples = [
     'test_images/bus.jpg',
     'test_images/car.jpg',
     'test_images/helicopter.jpg',
-    'test_images/plane.jpg'
+    'test_images/plane.jpg',
+    'test_images/ambulence.jpg',
+    'test_images/boat.jpg',
+    'test_images/bycle.jpg',
+    'test_images/fire_truck.jpg',
+    'test_images/hovercraft.jpg',
+    'test_images/jet_ski.jpg',
+    'test_images/kayak.jpg',
+    'test_images/motorcycle.jpg',
+    'test_images/rickshaw.jpg',
+    'test_images/scateboard.jpg',
+    'test_images/scooter.jpg',
+    'test_images/tractor.jpg',
+    'test_images/van.jpg'
 ]
 
 iface = gr.Interface(fn=recognize_image, inputs=image_input, outputs=label_output, examples=examples)
