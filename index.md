@@ -4,24 +4,28 @@ layout: page
 ---
 
 # Vehicle Image Recognizer
-vehicle image recognizer that can classify in between: -
-1. car<br>
-2. motorcycle<br>
-3. bicycle<br>
-4. truck<br>
-5. bus<br>
-6. van<br>
-7. rickshaw<br>
-8. scooter<br>
-9. skateboard<br>
-10. ambulance<br>
-11. fire truck<br>
-12. tractor<br>
-13. segway<br>
-14. unicycle<br>
-15. jet ski<br>
-16. helicopter<br>
-17. airplane<br>
-18. boat<br>
-19. kayak<br>
-20. hovercraft<br>
+
+Welcome to the Vehicle Image Recognizer, a powerful system capable of classifying various vehicles. Below is a list of vehicles it can identify:
+
+1. car
+2. motorcycle
+3. bicycle
+4. truck
+5. bus
+6. van
+7. rickshaw
+8. scooter
+9. skateboard
+10. ambulance
+11. fire truck
+12. tractor
+13. segway
+14. unicycle
+15. jet ski
+16. helicopter
+17. airplane
+18. boat
+19. kayak
+20. hovercraft
+
+Feel free to test the recognition capabilities of our system by uploading images of these vehicles.
