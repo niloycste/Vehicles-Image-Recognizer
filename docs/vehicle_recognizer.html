@@ -1,4 +1,4 @@
-<!-- ---
+---
 title: Vehicle Recognizer
 layout: page 
 ---
@@ -10,82 +10,6 @@ layout: page
 	src="https://gradio.s3-us-west-2.amazonaws.com/4.12.0/gradio.js"
 ></script>
 
-<gradio-app src="https://niloycste68-vehicles-recognizer.hf.space"></gradio-app> -->
+<gradio-app src="https://niloycste68-vehicles-recognizer.hf.space"></gradio-app>
 
----
-title: Vehicle Recognizer
-layout: page 
----
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vehicle Recognizer</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            padding: 20px;
-        }
-
-        #results {
-            margin-top: 20px;
-        }
-
-        #photo {
-            display: none;
-        }
-
-        label {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-
-<body>
-
-    <label for="photo">Upload Image</label>
-    <input id="photo" type="file">
-    <div id="results"></div>
-
-    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.12.0/gradio.js"></script>
-    <script>
-        document.getElementById("photo").addEventListener("change", function () {
-            var photoInput = document.getElementById("photo");
-            var resultsDiv = document.getElementById("results");
-
-            if (photoInput.files.length > 0) {
-                resultsDiv.innerHTML = "<p>Loading...</p>";
-
-                // Create a FormData object to send the image file
-                var formData = new FormData();
-                formData.append("file", photoInput.files[0]);
-
-                // Use Gradio's Python script runner to process the image
-                gr.pythonCode({
-                    code: `import PIL.Image
-import numpy as np
-from fastai.vision.all import load_learner
-import gradio as gr
-
-learner = load_learner("path/to/your/model")
-img = PIL.Image.open(file_path)
-img = np.array(img)
-pred_class, pred_idx, probs = learner.predict(img)
-pred_class.item()`,
-                    inputs: [formData],
-                    outputs: resultsDiv
-                });
-            }
-        });
-    </script>
-
-</body>
-
-</html>
