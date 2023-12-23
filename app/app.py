@@ -18,8 +18,8 @@ def recognize_image(image):
     pred, idx, probs = model.predict(image)
     return dict(zip(cap_labels, map(float, probs)))
 
-image_input = gr.Image()
-label_output = gr.Label()
+image_input = gr.inputs.Image(shape=(224,224))
+label_output = gr.outputs.Label()
 
 examples = [
    'test_images/bus.jpg',
