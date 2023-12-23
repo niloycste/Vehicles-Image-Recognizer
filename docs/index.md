@@ -1,5 +1,5 @@
 ---
-title: Vehicle Image Recognizer
+title: Home
 layout: page 
 ---
 
