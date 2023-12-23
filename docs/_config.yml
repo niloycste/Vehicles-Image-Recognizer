@@ -1,14 +1,8 @@
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: daviddarnes/garth
 plugins:
-  - jekyll-remote-theme
+- jekyll-remote-theme
 
-
-# remote_theme: daviddarnes/alembic@main
-# plugins:
-# - jekyll-remote-theme
-
-# remote_theme: daviddarnes/garth
-#   # daviddarnes/alembic@main 
+# remote_theme: daviddarnes/alembic@main 
 #   # jekyll-theme-basically-basic
 
 # plugins: 
