@@ -32,7 +32,11 @@ examples = [
     'test_images/tractor-385681_1280.jpg',
     'test_images/pexels-donald-tong-50911.jpg',
     'test_images/360_F_99053872_JO23heKr9O5tmtgICEmEHKcp8N1Orog1.jpg',
-    'test_images/EMS_Kayaking.jpg'
+    'test_images/EMS_Kayaking.jpg',
+    'test_images/istockphoto-157186300-612x612.jpg',
+    'test_images/GUEST_93eeb16a-ea58-46bf-bb46-092947a4dc1a.jpg',
+    'test_images/istockphoto-104300620-612x612.jpg',
+    'test_images/Watsonville_74595-2104F-Large.jpg'
 
 ]
 
