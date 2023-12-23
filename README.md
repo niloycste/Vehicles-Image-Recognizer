@@ -36,7 +36,7 @@ Details can be found in `notebooks/Data_Prep.ipynb`
 
 # Model Deployment
 I deployed to model to HuggingFace Spaces Gradio App. The implementation can be found in `deployment`folder or [here](https://huggingface.co/spaces/niloycste68/Vehicles-recognizer) <br/>
-<img src = "deployment/hugging_face.png" width="400" height="300">
+<img src = "deployment/hugging_face.png" width="800" height="300">
 
 # API integration with GitHub Pages
 The deployed model API is integrated [here](https://niloycste.github.io/Vehicles-Image-Recognizer/) in GitHub Pages Website. Implementation and other details can be found in `docs` folder.
