@@ -1,13 +1,8 @@
-remote_theme: daviddarnes/alembic@main
+remote_theme: pages-themes/merlot
 plugins:
 - jekyll-remote-theme
 
-# remote_theme: daviddarnes/garth
-#   # daviddarnes/alembic@main 
-#   # jekyll-theme-basically-basic
 
-# plugins: 
-# - jekyll-remote-theme
 
 title: Vehicles Images Recognizer
 description: An image classification API that classifies 20 different types of vehicles drove around the world
