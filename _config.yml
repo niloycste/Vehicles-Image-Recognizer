@@ -1,0 +1,9 @@
+remote_theme: daviddarnes/alembic@main
+plugins:
+- jekyll-remote-theme
+
+title: Vehicles Images Recognizer
+description: An image classification API that classifies 20 different types of vehicles drove around the world
+
+author:
+  name: M Mohaiminul Islam
