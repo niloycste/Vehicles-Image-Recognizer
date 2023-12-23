@@ -24,6 +24,9 @@ Welcome to the Vehicle Image Recognizer, a powerful system capable of classifyin
 - Kayak
 - Hovercraft
 
+# Objective of build up Vehicle Recognizer
+The Vehicle Image Recognizer is a high-tech tool that automatically identifies and categorizes different types of vehicles in pictures. Using smart computer vision tricks, it's really good at figuring out all kinds of vehicles, like cars, motorcycles, helicopters, boats etc. It's like magic for telling what's in a picture of traffic or anywhere with vehicles. This smart tool helps out in lots of ways, making it easier to manage traffic, keep an eye on things with surveillance, and generally make sure everything is running smoothly. It's like having a super-smart friend that knows a lot about vehicles.  
+
 # Dataset Preparation
 **Data Collection:** Downloaded from DuckDuckGo using term name <br/>
 **DataLoader:** Used fastai DataBlock API to set up the DataLoader.<br/>
