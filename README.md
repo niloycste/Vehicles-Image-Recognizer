@@ -32,6 +32,8 @@ The Vehicle Image Recognizer is a high-tech tool that automatically identifies a
 **DataLoader:** Used fastai DataBlock API to set up the DataLoader.<br/>
 **Data Augmentation:** fastai provides default data augmentation which operates in GPU.<br/>
 Details can be found in `notebooks/Data_Prep.ipynb`
+Anyone interested can also find the image dataset in Kaggle from this [link](https://www.kaggle.com/datasets/mmohaiminulislam/vehicles-image-dataset).
+
 
 # Training and Data Cleaning
 
@@ -44,5 +46,5 @@ I deployed to model to HuggingFace Spaces Gradio App. The implementation can be 
 
 # API integration with GitHub Pages
 The deployed model API is integrated [here](https://niloycste.github.io/Vehicles-Image-Recognizer/) in GitHub Pages Website. Implementation and other details can be found in `docs` folder.
-<img src = "deployment/git1.png" width="800" height="300">
-<img src = "deployment/git2.png" width="800" height="300">
+<img src = "deployment/git1.png" width="" height="">
+<img src = "deployment/git2.png" width="" height="">
