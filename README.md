@@ -31,7 +31,7 @@ The Vehicle Image Recognizer is a high-tech tool that automatically identifies a
 **Data Collection:** Downloaded from DuckDuckGo using term name <br/>
 **DataLoader:** Used fastai DataBlock API to set up the DataLoader.<br/>
 **Data Augmentation:** fastai provides default data augmentation which operates in GPU.<br/>
-Details can be found in `notebooks/Data_Prep.ipynb`
+Details can be found in `notebooks/Data_Prep.ipynb`.<br/>
 Anyone interested can also find the image dataset in Kaggle from this [link](https://www.kaggle.com/datasets/mmohaiminulislam/vehicles-image-dataset).
 
 
