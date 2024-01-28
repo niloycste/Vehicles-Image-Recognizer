@@ -45,3 +45,4 @@ I deployed to model to HuggingFace Spaces Gradio App. The implementation can be 
 # API integration with GitHub Pages
 The deployed model API is integrated [here](https://niloycste.github.io/Vehicles-Image-Recognizer/) in GitHub Pages Website. Implementation and other details can be found in `docs` folder.
 <img src = "deployment/git1.png" width="800" height="300">
+<img src = "deployment/git2.png" width="800" height="300">
